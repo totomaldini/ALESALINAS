@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página móvil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="java.script.js">
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="img/WE-GO.jpg" alt="Logo de la página">
+    <p class="quote" id="quoteText"></p>
+    <a class="instagram-link" href="https://www.instagram.com/">
+      <img src="img/87390.png" alt="Logo de Instagram">
+    </a>
+  </div>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var quotes = [
+        "que linda mamita",
+        "rica colacha",
+        "uf mi amor",
+        // Agrega las 27 frases restantes aquí
+      ];
+      var quoteText = document.getElementById('quoteText');
+      var randomIndex = Math.floor(Math.random() * quotes.length);
+      quoteText.textContent = quotes[randomIndex];
+    });
+    </script>
+</body>
+</html>
