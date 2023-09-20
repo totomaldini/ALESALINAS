@@ -13,9 +13,10 @@ body {
   margin: 0 auto;
 }
 .quote {
-  margin: 50px auto;
+  margin: 10px auto;
   font-size: 24px;
   color: #333;
+  text-aling: center;
 }
 
 .instagram-link {
